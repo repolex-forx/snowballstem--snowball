@@ -1,0 +1,32 @@
+[2026-09-18T13:12:06Z] === ENRICH ITERATION 1 START | repo=snowballstem/snowball sha=48a67a28 ===
+[2026-09-18T13:12:06Z] [iter=1] PHASE START: enrich repo=snowballstem/snowball sha=48a67a28 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/48a67a28-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/48a67a2831005f49c48ec29a5837640e23e54e6b.nq.gz
+[2026-09-18T13:12:06Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-09-18T13:12:18Z] [iter=1] AST store loaded triples=730279 load_secs=12 mem_mb=803 MB
+[2026-09-18T13:12:18Z] [iter=1] Step 2: Finding LSP targets mem_mb=803 MB
+[2026-09-18T13:12:18Z] [iter=1] LSP targets found call_sites=6426 imports=12 extends=2 implements=0 secs=1
+[2026-09-18T13:12:19Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=803 MB
+[2026-09-18T13:12:21Z] [iter=1] Position index built positions=55464 nodes_with_types=66496 secs=3 mem_mb=803 MB
+[2026-09-18T13:12:21Z] [iter=1] Step 3: Starting LSP resolution mem_mb=803 MB already_completed_types=[] already_completed_files=0
+[2026-09-18T13:12:21Z] [iter=1] Resolving target type target_type=call_site count=6426
+[2026-09-18T13:14:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.3 files_done=1 resolved=6 errors=507 current=compiler/generator_csharp.c
+[2026-09-18T13:16:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.4 files_done=2 resolved=12 errors=1051 current=compiler/generator_java.c
+[2026-09-18T13:18:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.5 files_done=3 resolved=17 errors=1583 current=compiler/generator.c
+[2026-09-18T13:20:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.6 files_done=4 resolved=32 errors=2125 current=compiler/generator_js.c
+[2026-09-18T13:22:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.6 files_done=5 resolved=37 errors=2656 current=compiler/generator_ada.c
+[2026-09-18T13:25:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.0 files_done=6 resolved=53 errors=3266 current=compiler/generator_rust.c
+[2026-09-18T13:27:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.0 files_done=7 resolved=58 errors=3773 current=examples/stemwords.c
+[2026-09-18T13:29:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=17.0 files_done=9 resolved=109 errors=4290 current=compiler/driver.c
+[2026-09-18T13:29:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=17.5 files_done=10 resolved=151 errors=4423 current=compiler/analyser.c
+[2026-09-18T13:30:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=18.6 files_done=11 resolved=228 errors=4700 current=compiler/tokeniser.c
+[2026-09-18T13:33:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=21.2 files_done=13 resolved=258 errors=5379 current=tests/stemtest.c
+[2026-09-18T13:33:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=21.9 files_done=18 resolved=308 errors=11926 current=rust/build.rs
+[2026-09-18T13:34:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=22.5 files_done=22 resolved=396 errors=18386 current=java/org/tartarus/snowball/SnowballProgram.java
+[2026-09-18T13:35:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=23.0 files_done=31 resolved=558 errors=18426 current=javascript/base-stemmer.js
+[2026-09-18T13:35:10Z] [iter=1] Target type resolved target_type=call_site resolved=568 errors=18433 secs=1369 mem_mb=803 MB
+[2026-09-18T13:35:10Z] [iter=1] Resolving target type target_type=import_statement count=12
+[2026-09-18T13:35:16Z] [iter=1] Target type resolved target_type=import_statement resolved=8 errors=0 secs=5 mem_mb=803 MB
+[2026-09-18T13:35:16Z] [iter=1] Resolving target type target_type=extends_clause count=2
+[2026-09-18T13:35:21Z] [iter=1] Target type resolved target_type=extends_clause resolved=2 errors=0 secs=6 mem_mb=803 MB
+[2026-09-18T13:35:35Z] [iter=1] Step 5: Writing final enrichment file triples=32821
+[2026-09-18T13:35:35Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/48a67a2831005f49c48ec29a5837640e23e54e6b.nq.gz size_kb=599
+[2026-09-18T13:35:35Z] [iter=1] PHASE END: enrich elapsed_s=1409 elapsed_min=23.5 total_triples=32821
