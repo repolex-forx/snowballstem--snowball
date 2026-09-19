@@ -1,0 +1,7 @@
+[2026-09-19T01:11:41Z] === AST ITERATION 1 START | repo=snowballstem/snowball sha=c70ed64f ===
+[2026-09-19T01:11:41Z] [iter=1] PHASE START: ast repo=snowballstem/snowball sha=c70ed64f
+[2026-09-19T01:11:41Z] [iter=1] Building AST aggregate chunks
+[2026-09-19T01:12:43Z] [iter=1] AST chunks built count=1 triples=651955
+[2026-09-19T01:12:43Z] [iter=1] AST .complete marker written path=/home/runner/work/forx/forx/storage/aggregate/ast/c70ed64f9d41c1032fba4e962b054f8e9d489a74/.complete
+[2026-09-19T01:12:43Z] [iter=1] PHASE END: ast elapsed_s=62 elapsed_min=1.0
+[2026-09-19T01:12:43Z] [iter=1] Wrote .next-action.json next_action=enrich path=/home/runner/work/forx/forx/storage/aggregate/.next-action.json
