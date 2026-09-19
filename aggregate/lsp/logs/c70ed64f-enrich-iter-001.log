@@ -1,0 +1,31 @@
+[2026-09-19T01:16:05Z] === ENRICH ITERATION 1 START | repo=snowballstem/snowball sha=c70ed64f ===
+[2026-09-19T01:16:05Z] [iter=1] PHASE START: enrich repo=snowballstem/snowball sha=c70ed64f runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/c70ed64f-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/c70ed64f9d41c1032fba4e962b054f8e9d489a74.nq.gz
+[2026-09-19T01:16:05Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-09-19T01:16:11Z] [iter=1] AST store loaded triples=651955 load_secs=6 mem_mb=803 MB
+[2026-09-19T01:16:11Z] [iter=1] Step 2: Finding LSP targets mem_mb=803 MB
+[2026-09-19T01:16:12Z] [iter=1] LSP targets found call_sites=5696 imports=12 extends=2 implements=0 secs=1
+[2026-09-19T01:16:13Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=803 MB
+[2026-09-19T01:16:16Z] [iter=1] Position index built positions=49381 nodes_with_types=59230 secs=3 mem_mb=803 MB
+[2026-09-19T01:16:16Z] [iter=1] Step 3: Starting LSP resolution mem_mb=803 MB already_completed_types=[] already_completed_files=0
+[2026-09-19T01:16:16Z] [iter=1] Resolving target type target_type=call_site count=5696
+[2026-09-19T01:18:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.4 files_done=1 resolved=5 errors=529 current=libstemmer/test.c
+[2026-09-19T01:20:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.7 files_done=3 resolved=14 errors=1080 current=compiler/generator_go.c
+[2026-09-19T01:22:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.8 files_done=4 resolved=21 errors=1591 current=compiler/generator_rust.c
+[2026-09-19T01:24:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.9 files_done=5 resolved=26 errors=2096 current=compiler/generator_python.c
+[2026-09-19T01:27:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.9 files_done=6 resolved=32 errors=2593 current=compiler/generator_pascal.c
+[2026-09-19T01:29:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.2 files_done=7 resolved=37 errors=3149 current=compiler/analyser.c
+[2026-09-19T01:30:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.3 files_done=8 resolved=102 errors=3402 current=compiler/generator_js.c
+[2026-09-19T01:32:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=16.4 files_done=9 resolved=107 errors=3924 current=compiler/generator_csharp.c
+[2026-09-19T01:34:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=18.7 files_done=10 resolved=113 errors=4464 current=compiler/space.c
+[2026-09-19T01:35:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=19.4 files_done=12 resolved=168 errors=4635 current=runtime/utilities.c
+[2026-09-19T01:36:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=20.0 files_done=14 resolved=212 errors=4792 current=examples/stemwords.c
+[2026-09-19T01:36:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=20.8 files_done=23 resolved=410 errors=4840 current=java/org/tartarus/snowball/Among.java
+[2026-09-19T01:37:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=21.3 files_done=29 resolved=500 errors=10580 current=rust/build.rs
+[2026-09-19T01:37:33Z] [iter=1] Target type resolved target_type=call_site resolved=533 errors=16276 secs=1277 mem_mb=803 MB
+[2026-09-19T01:37:33Z] [iter=1] Resolving target type target_type=import_statement count=12
+[2026-09-19T01:37:39Z] [iter=1] Target type resolved target_type=import_statement resolved=8 errors=0 secs=6 mem_mb=803 MB
+[2026-09-19T01:37:39Z] [iter=1] Resolving target type target_type=extends_clause count=2
+[2026-09-19T01:37:45Z] [iter=1] Target type resolved target_type=extends_clause resolved=2 errors=0 secs=7 mem_mb=803 MB
+[2026-09-19T01:38:01Z] [iter=1] Step 5: Writing final enrichment file triples=29377
+[2026-09-19T01:38:02Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/c70ed64f9d41c1032fba4e962b054f8e9d489a74.nq.gz size_kb=538
+[2026-09-19T01:38:02Z] [iter=1] PHASE END: enrich elapsed_s=1317 elapsed_min=21.9 total_triples=29377
